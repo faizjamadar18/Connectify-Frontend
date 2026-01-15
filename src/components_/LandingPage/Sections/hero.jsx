@@ -64,8 +64,7 @@ const Hero = () => {
                                         </div>
                                     ))}
                                 </Marquee>
-                                {/* <div className="pointer-events-none absolute inset-y-0 -right-1 w-1/3 bg-gradient-to-l from-[#101010] z-40"></div>
-                                <div className="pointer-events-none absolute inset-y-0 -left-1 w-1/3 bg-gradient-to-r from-[#101010] z-40"></div> */}
+
                             </div>
                         </div>
                     </AnimationContainer>
@@ -74,7 +73,7 @@ const Hero = () => {
                 <AnimationContainer animation="fadeRight" delay={0.4}>
                     <div className="flex flex-col items-start justify-start w-full h-min relative overflow-visible">
                         <div className="lg:aspect-[1.3884514435695539/1] w-full lg:w-[1000px] lg:h-[auto,720px] relative">
-                            <div className="pointer-events-none hidden lg:block absolute inset-y-0 right-1/4 w-1/3 h-full bg-gradient-to-l from-black z-50"></div>
+                            <div className="pointer-events-none hidden lg:block absolute inset-y-0 right-1/4 w-1/3 h-full bg-gradient-to-l from-black z-40"></div>
                             <div className="lg:absolute lg:inset-0">
                                 <img
                                     src="https://github.com/Shreyas-29/propease/blob/main/public/images/dashboard.png?raw=true"

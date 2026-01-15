@@ -35,38 +35,32 @@ const SOCIAL_LINKS = [
 
 const Footer = () => {
     return (
-        <footer className="relative border-t border-border pt-16 pb-8 md:pb-0 w-full overflow-hidden">
+        <footer className="relative border-t border-t-neutral-900 pt-16 pb-8 md:pb-0 w-full overflow-hidden">
             <Wrapper className="">
                 <AnimationContainer animation="scaleUp" delay={0.2}>
-                    <div className="absolute -top-1/8 lg:-top-1/2 inset-x-0 mx-auto bg-primary/50 lg:bg-primary/70 rounded-full w-1/2 h-1/4 blur-[6rem] lg:blur-[12rem]"></div>
+                    <div className="absolute -top-1/8 lg:-top-1/2 inset-x-0 mx-auto bg-orange-600/50 lg:bg-orange-600/70 rounded-full w-1/2 h-1/4 blur-[6rem] lg:blur-[12rem]"></div>
                 </AnimationContainer>
 
                 <AnimationContainer animation="scaleUp" delay={0.3}>
-                    <div className="absolute top-0 w-4/5 mx-auto inset-x-0 h-px bg-gradient-to-r from-primary/0 via-primary/80 to-primary/0"></div>
+                    <div className="absolute top-0 w-4/5 mx-auto inset-x-0 h-px bg-gradient-to-r from-orange-600/0 via-orange-from-orange-600/80 to-orange-from-orange-600/0"></div>
                 </AnimationContainer>
 
                 <div className="grid gap-8 xl:grid-cols-3 xl:gap-8">
                     <AnimationContainer animation="fadeRight" delay={0.4}>
                         <div className="flex flex-col items-start justify-start md:max-w-[300px]">
-                            <div className="flex items-center gap-2">
-                                <img
-                                    src="/icons/icon.svg"
-                                    alt="PropEase"
-                                    width={32}
-                                    height={32}
-                                />
-                                <span className="text-lg lg:text-xl font-medium">
-                                    PropEase
-                                </span>
-                            </div>
+                            <Link href="/" className="flex items-center gap-1.5 text-white">
+                                <img className="h-10" src="/logo_chatapp.png" alt="" />
+                                <div className="text-lg font-semibold !leading-tight text-transparent bg-clip-text bg-gradient-to-r from-white to-neutral-500">
+                                    Connectify
+                                </div>
+                            </Link>
                             <p className="text-muted-foreground mt-4 text-sm">
                                 123 Pine Avenue, Suite 500
-                                <br />
-                                New York, NY 10001
+                                
                             </p>
-                            <div className="mt-4 text-sm text-muted-foreground">
+                            <div className="text-sm text-muted-foreground">
                                 <p>support@propease.com</p>
-                                <p>+1 (123) 456-7890</p>
+                                
                             </div>
                             <div className="flex items-center gap-4 mt-6">
                                 {SOCIAL_LINKS.map((social, index) => (
@@ -77,7 +71,7 @@ const Footer = () => {
                                     >
                                         <Link
                                             to={social.href}
-                                            className="text-muted-foreground hover:text-primary transition-colors"
+                                            className="text-muted-foreground hover:text-orange-from-orange-600 transition-colors"
                                         >
                                             <social.icon className="size-5" />
                                         </Link>
@@ -91,7 +85,7 @@ const Footer = () => {
                         <div className="md:grid md:grid-cols-2 md:gap-8">
                             <AnimationContainer animation="fadeUp" delay={0.5}>
                                 <div>
-                                    <h3 className="text-base font-medium">Product</h3>
+                                    <h3 className="text-base font-medium text-white">Product</h3>
                                     <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
                                         {PRODUCT_LINKS.map((link, index) => (
                                             <AnimationContainer
@@ -115,7 +109,7 @@ const Footer = () => {
 
                             <AnimationContainer animation="fadeUp" delay={0.5}>
                                 <div className="mt-10 md:mt-0">
-                                    <h3 className="text-base font-medium">Resources</h3>
+                                    <h3 className="text-base font-medium text-white">Resources</h3>
                                     <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
                                         {RESOURCES_LINKS.map((link, index) => (
                                             <AnimationContainer
@@ -126,7 +120,7 @@ const Footer = () => {
                                                 <li>
                                                     <Link
                                                         to={link.href}
-                                                        className="hover:text-foreground transition-colors"
+                                                        className="hover:text-white transition-colors"
                                                     >
                                                         {link.label}
                                                     </Link>
@@ -140,8 +134,8 @@ const Footer = () => {
 
                         <AnimationContainer animation="fadeUp" delay={0.5}>
                             <div>
-                                <h3 className="text-base font-medium">Company</h3>
-                                <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+                                <h3 className="text-base font-medium text-white">Company</h3>
+                                <ul className="mt-4 space-y-2 text-sm text-muted-foreground ">
                                     {COMPANY_LINKS.map((link, index) => (
                                         <AnimationContainer
                                             key={index}
@@ -151,7 +145,7 @@ const Footer = () => {
                                             <li>
                                                 <Link
                                                     to={link.href}
-                                                    className="hover:text-foreground transition-colors"
+                                                    className="hover:text-white transition-colors"
                                                 >
                                                     {link.label}
                                                 </Link>
@@ -165,7 +159,7 @@ const Footer = () => {
                 </div>
 
                 <AnimationContainer animation="fadeUp" delay={1}>
-                    <div className="mt-16 border-t border-border/40 py-8 flex flex-col md:flex-row items-center justify-center">
+                    <div className="mt-16 border-t border-gray-900/40 py-8 flex flex-col md:flex-row items-center justify-center">
                         <p className="text-sm text-muted-foreground">
                             © {new Date().getFullYear()} PropEase. All rights reserved.
                         </p>

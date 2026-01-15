@@ -26,14 +26,14 @@ const CTA = () => {
     return (
         <Wrapper className="py-20 lg:py-32">
             <div className="flex flex-col items-center text-center relative gap-4 py-20 lg:py-32 overflow-hidden z-0">
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#101010] w-full h-1/2 z-10"></div>
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#000000] w-full h-1/2 z-10"></div>
 
                 <AnimationContainer animation="scaleUp" delay={0.2} className="w-full mx-auto">
-                    <div className="absolute -top-1/2 inset-x-0 mx-auto bg-foreground/50 rounded-full size-1/2 blur-[4rem] lg:blur-[10rem]"></div>
+                    <div className="absolute -top-1/2 inset-x-0 mx-auto bg-white/50 rounded-full size-1/2 blur-[4rem] lg:blur-[10rem]"></div>
                 </AnimationContainer>
 
                 <AnimationContainer animation="scaleUp" delay={0.3}>
-                    <div className="absolute top-0 w-4/5 mx-auto inset-x-0 h-px bg-gradient-to-r from-foreground/0 via-foreground/50 to-foreground/0"></div>
+                    <div className="absolute top-0 w-4/5 mx-auto inset-x-0 h-px bg-gradient-to-r from-black/0 via-foreground/50 to-foreground/0"></div>
                 </AnimationContainer>
 
                 {/* <AnimationContainer animation="scaleUp" delay={0.2}>
@@ -54,7 +54,7 @@ const CTA = () => {
                     </AnimationContainer>
 
                     <AnimationContainer animation="fadeUp" delay={0.4}>
-                        <h2 className="text-3xl md:text-5xl lg:text-6xl font-medium !leading-tight text-transparent bg-clip-text bg-gradient-to-b from-foreground to-neutral-400">
+                        <h2 className="text-3xl md:text-5xl lg:text-6xl font-medium !leading-tight text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400">
                             Ready to get started?
                         </h2>
                     </AnimationContainer>
@@ -82,7 +82,7 @@ const CTA = () => {
                                                 height={1024}
                                                 className="size-5 text-primary"
                                             />
-                                            <span className="text-sm text-foreground">
+                                            <span className="text-sm text-gray-300">
                                                 {item.label}
                                             </span>
                                         </div>
@@ -94,7 +94,7 @@ const CTA = () => {
 
                     <AnimationContainer animation="fadeUp" delay={1}>
                         <Link to="/signin">
-                            <Button size="lg" className="mt-6">
+                            <Button size="lg" className="mt-6 bg-orange-600">
                                 Start now
                                 <ArrowRightIcon className="size-4 ml-2" />
                             </Button>

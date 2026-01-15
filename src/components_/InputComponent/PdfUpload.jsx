@@ -40,7 +40,7 @@ export default function PdfUpload() {
             <input type="file" accept="application/pdf" onChange={handleFileChange} className="border border-gray-500 w-full rounded px-2 py-1" />
             {
                 inputFile && <button className="mt-2">
-                    <a href={inputFile} target="_blank" rel="noopener noreferrer" className="pt-2 mt-2 text-blue-500 underline">
+                    <a href={inputFile} target="_blank" rel="noopener noreferrer" className="pt-2 mt-2 text-orange-500 underline">
                         Open Selected PDF
                     </a>
                 </button>
