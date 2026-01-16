@@ -47,12 +47,12 @@ const Testimonials = () => {
                                     <div className="flex flex-col gap-6">
                                         <AnimationContainer animation="fadeRight" delay={0.7 + (index * 0.1)}>
                                             <div className="flex items-center gap-4">
-                                                <div className="relative w-12 h-12 rounded-full overflow-hidden">
+                                                <div className="relative w-12 h-12 rounded-full overflow-hidden ">
                                                     <img
                                                         src={testimonial.image}
                                                         alt={testimonial.author}
-                                                        fill
-                                                        className="object-cover"
+                                                      
+                                                        className="h-12 w-16"
                                                     />
                                                 </div>
                                                 <div>
@@ -67,7 +67,7 @@ const Testimonials = () => {
                                         </AnimationContainer>
 
                                         <AnimationContainer animation="fadeUp" delay={0.8 + (index * 0.1)}>
-                                            <p className="text-lg text-white">
+                                            <p className="text-lg text-neutral-400">
                                                 "{testimonial.content}"
                                             </p>
                                         </AnimationContainer>

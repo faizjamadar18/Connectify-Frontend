@@ -41,11 +41,11 @@ const Features = () => {
                                     </div>
                                 </AnimationContainer>
                                 <AnimationContainer animation="fadeUp" delay={0.7}>
-                                    <div className="relative h-60">
+                                    <div className="relative h-60 flex justify-center">
                                         <img
                                             src={FEATURES[0].image}
                                             alt={FEATURES[0].title}
-                                            fill
+                                            
                                             className="object-contain"
                                         />
                                     </div>
@@ -68,11 +68,11 @@ const Features = () => {
                                     </div>
                                 </AnimationContainer>
                                 <AnimationContainer animation="fadeUp" delay={0.8}>
-                                    <div className="relative h-48">
+                                    <div className="relative h-48 flex justify-center">
                                         <img
                                             src={FEATURES[1].image}
                                             alt={FEATURES[1].title}
-                                            fill
+                                       
                                             className="object-contain"
                                         />
                                     </div>
@@ -97,11 +97,11 @@ const Features = () => {
                                     </div>
                                 </AnimationContainer>
                                 <AnimationContainer animation="fadeUp" delay={0.9}>
-                                    <div className="relative h-48">
+                                    <div className="relative h-48 flex justify-center">
                                         <img
                                             src={FEATURES[2].image}
                                             alt={FEATURES[2].title}
-                                            fill
+                                    
                                             className="object-contain"
                                         />
                                     </div>
@@ -124,11 +124,11 @@ const Features = () => {
                                     </div>
                                 </AnimationContainer>
                                 <AnimationContainer animation="fadeUp" delay={1}>
-                                    <div className="relative h-48">
+                                    <div className="relative h-48 flex justify-center">
                                         <img
                                             src={FEATURES[3].image}
                                             alt={FEATURES[3].title}
-                                            fill
+                                       
                                             className="object-contain"
                                         />
                                     </div>

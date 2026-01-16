@@ -55,7 +55,7 @@ const Footer = () => {
                                 </div>
                             </Link>
                             <p className="text-muted-foreground mt-4 text-sm">
-                                123 Pine Avenue, Suite 500
+                                123 Pine Avenue, india 500
                                 
                             </p>
                             <div className="text-sm text-muted-foreground">
@@ -96,7 +96,7 @@ const Footer = () => {
                                                 <li>
                                                     <Link
                                                         to={link.href}
-                                                        className="hover:text-foreground transition-colors"
+                                                        className="hover:text-white transition-colors"
                                                     >
                                                         {link.label}
                                                     </Link>
@@ -159,9 +159,9 @@ const Footer = () => {
                 </div>
 
                 <AnimationContainer animation="fadeUp" delay={1}>
-                    <div className="mt-16 border-t border-gray-900/40 py-8 flex flex-col md:flex-row items-center justify-center">
+                    <div className="mt-16 border-t border-gray-900/40 py-8 flex flex-col md:flex-row items-center justify-center mb-16">
                         <p className="text-sm text-muted-foreground">
-                            © {new Date().getFullYear()} PropEase. All rights reserved.
+                            © {new Date().getFullYear()} Connecify by <span className='text-neutral-300 font-bold'>Faiz</span>  All rights reserved.
                         </p>
                     </div>
                 </AnimationContainer>

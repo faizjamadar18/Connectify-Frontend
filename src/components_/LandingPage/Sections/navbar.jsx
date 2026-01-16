@@ -90,12 +90,12 @@ const Navbar = () => {
           <AnimationContainer animation="fadeLeft" delay={0.1}>
             <div className="flex items-center gap-x-4">
 
-                
-                  {
-                    (loginUser) ? <Link to={`/u/chatting`} className='text-gray-300 hover:text-blue-400 transition'> <Button size="lg"><Dashboard></Dashboard>Dashboard</Button>  </Link>
-                      : <Link to='/login' className='text-gray-300 hover:text-blue-400 transition'><Button size="lg">Get Startted</Button> </Link>
-                  }
-                
+
+              {
+                (loginUser) ? <Link to={`/u/chatting`} className='text-gray-300 hover:text-blue-400 transition'> <Button size="lg"><Dashboard ></Dashboard>Dashboard</Button>  </Link>
+                  : <Link to='/login' className='text-gray-300 hover:text-blue-400 transition'><Button size="lg">Get Startted</Button> </Link>
+              }
+
 
 
             </div>
@@ -128,8 +128,8 @@ const Navbar = () => {
               <div className="flex items-center justify-center gap-x-4">
                 <Button size="sm">
                   {
-                    (loginUser) ? <Link to={`/u/profile/${loginUser?.username}`} className='text-gray-300 hover:text-blue-400 transition'><Avatar src={loginUser.image} /></Link>
-                      : <Link to='/login' className='text-gray-300 hover:text-blue-400 transition'>Login</Link>
+                    (loginUser) ? <Link to={`/u/chatting`} className='text-gray-300 hover:text-orange-400 transition'> <Dashboard></Dashboard>Dashboard </Link>
+                      : <Link to='/login' className='text-gray-300 hover:text-orange-400 transition'>Login</Link>
                   }
                 </Button>
               </div>

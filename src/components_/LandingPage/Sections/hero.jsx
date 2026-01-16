@@ -25,18 +25,18 @@ const Hero = () => {
                 <div className="flex flex-col items-start gap-10 py-8 w-full">
                     <div className="flex flex-col items-start gap-4">
                         <AnimationContainer animation="fadeUp" delay={0.2}>
-                            <SectionBadge title="Trusted by 10,000+ Users"  />
+                            <SectionBadge title="Trusted by 1000+ Users" />
                         </AnimationContainer>
 
                         <AnimationContainer animation="fadeUp" delay={0.4}>
                             <h1 className="text-5xl lg:text-6xl font-medium !leading-tight text-transparent bg-clip-text bg-gradient-to-r from-white to-neutral-500">
-                                Effortless Real Estate Trading
+                                Real-Time Chat & Video Calls, Built for Speed
                             </h1>
                         </AnimationContainer>
 
                         <AnimationContainer animation="fadeUp" delay={0.6}>
                             <p className="text-sm md:text-base lg:text-lg text-muted-foreground">
-                                Simplify your property journey with our comprehensive platform. Buy, sell, or manage properties with ease using our innovative tools and expert guidance.
+                                Break down digital barriers with ultra-low latency video and instant messaging. Real-time connection, reimagined for the modern web.
                             </p>
                         </AnimationContainer>
                     </div>
@@ -44,8 +44,8 @@ const Hero = () => {
                     <AnimationContainer animation="fadeUp" delay={0.8}>
                         <div className="w-full">
                             <Link to={"/"}>
-                                <Button size="sm" className="w-full md:w-auto bg-orange-600" >
-                                    Start free trial
+                                <Button size="lg" className="w-full md:w-auto bg-orange-600 hover:bg-orange-700 cursor-pointer" >
+                                    Start for free
                                 </Button>
                             </Link>
                         </div>
@@ -54,7 +54,7 @@ const Hero = () => {
                     <AnimationContainer animation="fadeUp" delay={1}>
                         <div className="flex flex-col items-start gap-4 py-4">
                             <p className="text-sm md:text-base text-muted-foreground">
-                                Trusted by Industry Leaders
+                                Trusted by 
                             </p>
                             <div className="w-full relative max-w-[calc(100vw-2rem)] lg:max-w-lg">
                                 <Marquee className="[--duration:40s] select-none [--gap:2rem]">
@@ -64,7 +64,6 @@ const Hero = () => {
                                         </div>
                                     ))}
                                 </Marquee>
-
                             </div>
                         </div>
                     </AnimationContainer>
@@ -76,7 +75,7 @@ const Hero = () => {
                             <div className="pointer-events-none hidden lg:block absolute inset-y-0 right-1/4 w-1/3 h-full bg-gradient-to-l from-black z-40"></div>
                             <div className="lg:absolute lg:inset-0">
                                 <img
-                                    src="https://github.com/Shreyas-29/propease/blob/main/public/images/dashboard.png?raw=true"
+                                    src="/dashboard.png"
                                     alt="hero"
                                     sizes="1000px"
                                     width={1024}

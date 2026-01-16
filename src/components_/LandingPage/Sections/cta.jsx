@@ -6,18 +6,20 @@ import Wrapper from "../global/Wrapper";
 import { Button } from "@/components/ui/button";
 // import { FlickeringGrid } from "./ui/flickering-grid";
 import SectionBadge from "@/components/ui/section-badge";
+import { Security, WatchLater, AutoFixHigh } from "@mui/icons-material";
+import React from "react";
 
 const HIGHLIGHTS = [
     {
-        icon: "/icons/shield.svg",
+        icon: Security,
         label: "Secure Platform"
     },
     {
-        icon: "/icons/clock.svg",
+        icon: WatchLater,
         label: "Real-time Updates"
     },
     {
-        icon: "/icons/magicpen.svg",
+        icon: AutoFixHigh,
         label: "Smart Features"
     }
 ];
@@ -36,18 +38,6 @@ const CTA = () => {
                     <div className="absolute top-0 w-4/5 mx-auto inset-x-0 h-px bg-gradient-to-r from-black/0 via-foreground/50 to-foreground/0"></div>
                 </AnimationContainer>
 
-                {/* <AnimationContainer animation="scaleUp" delay={0.2}>
-                    <FlickeringGrid
-                        className="absolute inset-0 -z-10 h-full w-[120%]"
-                        squareSize={4}
-                        gridGap={6}
-                        color="#525252"
-                        maxOpacity={0.2}
-                        flickerChance={0.1}
-                        height={800}
-                    />
-                </AnimationContainer> */}
-
                 <div className="flex flex-col items-center justify-center w-full z-30">
                     <AnimationContainer animation="fadeUp" delay={0.3}>
                         <SectionBadge title="Start now" />
@@ -61,11 +51,11 @@ const CTA = () => {
 
                     <AnimationContainer animation="fadeUp" delay={0.5}>
                         <p className="text-sm md:text-base lg:text-lg text-muted-foreground max-w-lg mx-auto mt-4">
-                            Sign up for a free trial and see how PropEase can help you manage your properties.
+                            Sign up for a free trial and see how Connectify can help you manage your communication.
                         </p>
                     </AnimationContainer>
 
-                    <AnimationContainer animation="fadeUp" delay={0.6}>
+                    <AnimationContainer animation="fadeUp" delay={0.6} >
                         <div className="flex items-center mt-4">
                             <div className="rounded-full px-4 py-2.5 bg-neutral-900 flex flex-wrap md:flex-row items-center justify-center gap-4">
                                 {HIGHLIGHTS.map((item, index) => (
@@ -75,13 +65,11 @@ const CTA = () => {
                                         delay={0.7 + (index * 0.1)}
                                     >
                                         <div className="flex items-center gap-2 last:hidden md:last:flex">
-                                            <img
-                                                src={item.icon}
-                                                alt={item.label}
-                                                width={1024}
-                                                height={1024}
-                                                className="size-5 text-primary"
-                                            />
+
+                                            {React.createElement(item.icon, {
+                                                style: { fontSize: "1rem", color: "gray" },
+                                            })}
+
                                             <span className="text-sm text-gray-300">
                                                 {item.label}
                                             </span>
@@ -93,7 +81,7 @@ const CTA = () => {
                     </AnimationContainer>
 
                     <AnimationContainer animation="fadeUp" delay={1}>
-                        <Link to="/signin">
+                        <Link to="/login">
                             <Button size="lg" className="mt-6 bg-orange-600">
                                 Start now
                                 <ArrowRightIcon className="size-4 ml-2" />

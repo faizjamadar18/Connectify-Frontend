@@ -35,10 +35,10 @@ export default function LeftSidebar() {
             to={"/"}
             className="flex items-center space-x-3 mt-1 p-1 transition-all hover:cursor-pointer z-10 sticky top-0 left-0"
           >
-            <Link to={"/"} className="flex items-center gap-1.5 text-white">
+            
               <img className="h-8" src="/logo_chatapp.png" alt="" />
 
-            </Link>
+      
 
           </Link>
 
