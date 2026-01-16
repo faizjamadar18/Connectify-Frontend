@@ -40,7 +40,7 @@ const Perks = () => {
                         <div
                             key={index}
                             className={cn(
-                                "flex items-center p-2 md:p-16",
+                                "flex items-center p-8 md:p-16",
                                 index % 2 === 0 ? "justify-end border-r border-neutral-800" : "justify-start",
                                 index === 2 && "border-t border-neutral-800",
                                 index === 3 && "border-t border-neutral-800",

@@ -128,7 +128,7 @@ const Navbar = () => {
               <div className="flex items-center justify-center gap-x-4">
                 <Button size="sm">
                   {
-                    (loginUser) ? <Link to={`/u/chatting`} className='text-gray-300 hover:text-orange-400 transition'> <Dashboard></Dashboard>Dashboard </Link>
+                    (loginUser) ? <Link to={`/u/chatting`} className='text-gray-300 hover:text-orange-400 transition'> <Dashboard className="mr-1"></Dashboard>Dashboard </Link>
                       : <Link to='/login' className='text-gray-300 hover:text-orange-400 transition'>Login</Link>
                   }
                 </Button>

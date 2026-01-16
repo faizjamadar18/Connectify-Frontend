@@ -14,13 +14,13 @@ const Features = () => {
 
                 <AnimationContainer animation="fadeUp" delay={0.3}>
                     <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium !leading-tight text-transparent bg-clip-text bg-gradient-to-b from-white to-neutral-400">
-                        Manage properties smarter
+                        Connect Without Compromise
                     </h2>
                 </AnimationContainer>
 
                 <AnimationContainer animation="fadeUp" delay={0.4}>
                     <p className="text-sm md:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto">
-                        Experience the future of real estate with our all-in-one platform for seamless property management.
+                        A centralized hub for every conversation. Monitor quality, manage chats, and connect instantly—all in one place.
                     </p>
                 </AnimationContainer>
             </div>

@@ -55,11 +55,10 @@ const Footer = () => {
                                 </div>
                             </Link>
                             <p className="text-muted-foreground mt-4 text-sm">
-                                123 Pine Avenue, india 500
-                                
+                               @FaizJamadar
                             </p>
                             <div className="text-sm text-muted-foreground">
-                                <p>support@propease.com</p>
+                                <p>support@connectify.com</p>
                                 
                             </div>
                             <div className="flex items-center gap-4 mt-6">

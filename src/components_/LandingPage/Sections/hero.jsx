@@ -58,7 +58,7 @@ const Hero = () => {
                             </p>
                             <div className="w-full relative max-w-[calc(100vw-2rem)] lg:max-w-lg">
                                 <Marquee className="[--duration:40s] select-none [--gap:2rem]">
-                                    {[...Array(10)].map((_, index) => (
+                                    {[...Array(6)].map((_, index) => (
                                         <div key={index} className="flex items-center justify-center text-muted-foreground h-16">
                                             {companies[index % companies.length]({ className: "w-auto h-5" })}
                                         </div>
