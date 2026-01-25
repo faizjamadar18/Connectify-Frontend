@@ -31,7 +31,7 @@ export default function Login() {
 
             if (response?.status === 200) {
                 localStorage.setItem('authToken', response.data.token);
-                enqueueSnackbar(response.data.message || 'User login successfully.', { variant: "success" });
+                enqueueSnackbar(response.data.message || 'User login successfully.', { variant: "success" ,autoHideDuration: 500 });
                 navigate("/");
             } else {
                 enqueueSnackbar(response?.error || 'Network error, please try again.', { variant: "error" });
@@ -91,7 +91,7 @@ export default function Login() {
                 </p>
 
                 <p className="text-center text-neutral-700">
-                    Demo : Email- george@gmail.com , Password :  George
+                    Demo- Email: faiz@gmail.com , Password :  faizjamadar
                 </p>
             </div>
         </div>
