@@ -89,6 +89,10 @@ export default function Login() {
                 <p className="mt-4 text-center">
                     Don't have an account? <Link to="/register" className="text-orange-500">Register</Link> / <Link to={'/'} className="text-orange-500">Home</Link>
                 </p>
+
+                <p className="text-center text-neutral-700">
+                    Demo : Email -George@gmail.com , Password :  George
+                </p>
             </div>
         </div>
     );
