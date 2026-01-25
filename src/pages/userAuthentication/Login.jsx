@@ -91,7 +91,7 @@ export default function Login() {
                 </p>
 
                 <p className="text-center text-neutral-700">
-                    Demo : Email -George@gmail.com , Password :  George
+                    Demo : Email- george@gmail.com , Password :  George
                 </p>
             </div>
         </div>
